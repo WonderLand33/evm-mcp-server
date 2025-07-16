@@ -37,7 +37,8 @@ class Config:
             "rpc_url": ETHEREUM_RPC_URL,
             "explorer": "https://etherscan.io",
             "explorer_api": "https://api.etherscan.io/api",
-            "native_token": "ETH"
+            "native_token": "ETH",
+            "supports_ens": True
         },
         "polygon": {
             "name": "Polygon",
@@ -45,7 +46,8 @@ class Config:
             "rpc_url": POLYGON_RPC_URL,
             "explorer": "https://polygonscan.com",
             "explorer_api": "https://api.polygonscan.com/api",
-            "native_token": "MATIC"
+            "native_token": "MATIC",
+            "supports_ens": False
         },
         "bsc": {
             "name": "Binance Smart Chain",
@@ -53,7 +55,8 @@ class Config:
             "rpc_url": BSC_RPC_URL,
             "explorer": "https://bscscan.com",
             "explorer_api": "https://api.bscscan.com/api",
-            "native_token": "BNB"
+            "native_token": "BNB",
+            "supports_ens": False
         },
         "arbitrum": {
             "name": "Arbitrum One",
@@ -61,7 +64,8 @@ class Config:
             "rpc_url": ARBITRUM_RPC_URL,
             "explorer": "https://arbiscan.io",
             "explorer_api": "https://api.arbiscan.io/api",
-            "native_token": "ETH"
+            "native_token": "ETH",
+            "supports_ens": True
         },
         "optimism": {
             "name": "Optimism",
@@ -69,7 +73,54 @@ class Config:
             "rpc_url": OPTIMISM_RPC_URL,
             "explorer": "https://optimistic.etherscan.io",
             "explorer_api": "https://api-optimistic.etherscan.io/api",
-            "native_token": "ETH"
+            "native_token": "ETH",
+            "supports_ens": True
+        },
+        "base": {
+            "name": "Base",
+            "chain_id": 8453,
+            "rpc_url": os.getenv("BASE_RPC_URL", "https://mainnet.base.org"),
+            "explorer": "https://basescan.org",
+            "explorer_api": "https://api.basescan.org/api",
+            "native_token": "ETH",
+            "supports_ens": True
+        },
+        "avalanche": {
+            "name": "Avalanche C-Chain",
+            "chain_id": 43114,
+            "rpc_url": os.getenv("AVALANCHE_RPC_URL", "https://api.avax.network/ext/bc/C/rpc"),
+            "explorer": "https://snowtrace.io",
+            "explorer_api": "https://api.snowtrace.io/api",
+            "native_token": "AVAX",
+            "supports_ens": False
+        },
+        "fantom": {
+            "name": "Fantom Opera",
+            "chain_id": 250,
+            "rpc_url": os.getenv("FANTOM_RPC_URL", "https://rpc.ftm.tools"),
+            "explorer": "https://ftmscan.com",
+            "explorer_api": "https://api.ftmscan.com/api",
+            "native_token": "FTM",
+            "supports_ens": False
+        },
+        # 测试网络
+        "sepolia": {
+            "name": "Ethereum Sepolia",
+            "chain_id": 11155111,
+            "rpc_url": os.getenv("SEPOLIA_RPC_URL", "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"),
+            "explorer": "https://sepolia.etherscan.io",
+            "explorer_api": "https://api-sepolia.etherscan.io/api",
+            "native_token": "ETH",
+            "supports_ens": True
+        },
+        "goerli": {
+            "name": "Ethereum Goerli",
+            "chain_id": 5,
+            "rpc_url": os.getenv("GOERLI_RPC_URL", "https://goerli.infura.io/v3/YOUR_PROJECT_ID"),
+            "explorer": "https://goerli.etherscan.io",
+            "explorer_api": "https://api-goerli.etherscan.io/api",
+            "native_token": "ETH",
+            "supports_ens": True
         }
     }
     

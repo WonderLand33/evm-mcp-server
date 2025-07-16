@@ -20,4 +20,4 @@ fi
 
 # 启动服务器
 echo "启动 EVM MCP 服务器..."
-python3 -m evm_mcp_server
+python3 -m src

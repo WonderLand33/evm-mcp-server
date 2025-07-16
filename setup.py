@@ -38,12 +38,12 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "evm-mcp-server=evm_mcp_server.server:main",
+            "evm-mcp-server=src.server:main",
         ],
     },
     include_package_data=True,
     package_data={
-        "evm_mcp_server": ["*.md", "*.txt"],
+        "src": ["*.md", "*.txt"],
     },
     keywords="ethereum, blockchain, mcp, web3, defi, crypto",
     project_urls={

@@ -4,7 +4,7 @@ EVM MCP 服务器测试脚本
 
 import asyncio
 import json
-from evm_mcp_server.tools import AccountTools, TokenTools, NetworkTools
+from src.tools import AccountTools, TokenTools, NetworkTools
 
 async def test_basic_functions():
     """测试基本功能"""

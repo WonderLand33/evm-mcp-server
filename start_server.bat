@@ -19,6 +19,6 @@ if not exist .env (
 
 REM 启动服务器
 echo 启动 EVM MCP 服务器...
-python -m evm_mcp_server
+python -m src
 
 pause

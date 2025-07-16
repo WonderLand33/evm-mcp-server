@@ -63,7 +63,7 @@ chmod +x start_server.sh
 ./start_server.sh
 
 # 或直接使用 Python
-python -m evm_mcp_server
+python -m src
 ```
 
 ## 配置说明
@@ -109,7 +109,7 @@ python -m evm_mcp_server
 ### 项目结构
 ```
 evm-mcp-server/
-├── evm_mcp_server/          # 主要代码
+├── src/                    # 主要代码
 │   ├── tools/               # 工具模块
 │   ├── config.py           # 配置管理
 │   ├── server.py           # MCP 服务器
